@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l2_ex2</title>
+    <style>
+      .field {
+        clear: both;
+        text-align: right;
+        line-height: 25px;
+        width: 100%;
+        padding: 5px 0;
+      }
+      label {
+        padding-right: 10px;
+      }
+      form {
+        float: left;
+      }
+      input {
+        width: 200px;
+      }
+      button {
+          float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="field">
+        <label for="slider">Slider </label>
+        <input type="range" name="sliderInp" id="sliderInp" />
+      </div>
+      <div class="field">
+        <label for="spinner">Numeric spinner </label>
+        <input type="number" name="spinnerInp" id="spinnerInp" />
+      </div>
+      <div class="field">
+        <label for="date">Date picker </label>
+        <input type="date" name="dateInp" id="dateInp" />
+      </div>
+      <div class="field">
+        <label for="color">Color picker </label>
+        <input type="color" name="colorInp" id="colorInp" />
+      </div>
+      <div class="field">
+        <label for="text_holder">Text field with placeholder </label>
+        <input
+          type="text"
+          name="text_holderInp"
+          id="text_holderInp"
+          placeholder="Insert your text here"
+        />
+      </div>
+      <div class="field">
+        <label for="url">Url field </label>
+        <input
+          type="url"
+          name="urlInp"
+          id="urlInp"
+          placeholder="http://net.biba.com"
+        />
+      </div>
+      <div class="field">
+        <label for="email">Email field </label>
+        <input
+          type="email"
+          name="emailInp"
+          id="emailInp"
+          placeholder="contact@gmail.com"
+        />
+      </div>
+
+      <button type="submit">Submit form</button>
+    </form>
+  </body>
+</html>
