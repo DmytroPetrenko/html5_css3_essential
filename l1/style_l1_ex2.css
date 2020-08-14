@@ -1,0 +1,42 @@
+* {
+    text-align: center;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+header,
+nav,
+aside,
+footer,
+.main {
+  background: gray;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.header,
+.article,
+.footer {
+  background: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.main {
+    flex-grow: 2;
+}
+
+nav, aside {
+    flex-grow: 1;
+}
