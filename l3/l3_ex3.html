@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l3_ex3 Drag and Drop</title>
+
+    <link rel="stylesheet" href="style_l3_ex3.css" />
+    <script src="main_l3_ex3.js"></script>
+  </head>
+  <body>
+    <div id="shop" ondragover="event.preventDefault()" ondrop="drop(event)">
+      Shop
+      <div id="item1" class="item" draggable="true" ondragstart="drag(event)">
+        Item1
+      </div>
+      <div id="item2" class="item" draggable="true" ondragstart="drag(event)">
+        Item2
+      </div>
+    </div>
+    <div id="target" ondragover="event.preventDefault()" ondrop="drop(event)">
+      Cart
+    </div>
+  </body>
+</html>
