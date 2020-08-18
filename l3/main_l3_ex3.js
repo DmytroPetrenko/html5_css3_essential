@@ -13,36 +13,9 @@ function drag(event) {
 }
 
 function dragenter(event) {
-  // var target = document.getElementById("target");
-
-  var target = document.getElementsByClassName("cart");
-
-  Array.prototype.forEach.call(target, (element) => {
-    //if (element == event.target) {
-      element.style.border = "3px dotted #000";
-    //}
-  });
-
-  //target.forEach((element) => {
-   // if (element == event.target) {
-   //   target.style.border = "3px dotted #000";
- //   }
-//  });
-
-  //target.style.border = "3px dotted #000";
+  event.currentTarget.style.border = "3px dotted #000";
 }
 
 function dragleave(event) {
-  var target = document.getElementsByClassName("cart");
-
-  Array.prototype.forEach.call(target, (element) => {
-    //if (element == event.target) {
-      element.style.border = "0";
-    //}
-  });
-
-
-  //var target = document.getElementById("target");
-
-  //target.style.border = "0";
+  event.currentTarget.style.border = "none";
 }
