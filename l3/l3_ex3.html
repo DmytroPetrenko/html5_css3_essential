@@ -9,7 +9,14 @@
     <script src="main_l3_ex3.js"></script>
   </head>
   <body>
-    <div id="shop" ondragover="event.preventDefault()" ondrop="drop(event)">
+    <div
+      id="shop"
+      class="cart"
+      ondragover="event.preventDefault()"
+      ondrop="drop(event)"
+      ondragenter="dragenter(event)"
+      ondragleave="dragleave(event)"
+    >
       Shop
       <div id="item1" class="item" draggable="true" ondragstart="drag(event)">
         Item1
@@ -18,7 +25,14 @@
         Item2
       </div>
     </div>
-    <div id="target" ondragover="event.preventDefault()" ondrop="drop(event)">
+    <div
+      id="target"
+      class="cart"
+      ondragover="event.preventDefault()"
+      ondrop="drop(event)"
+      ondragenter="dragenter(event)"
+      ondragleave="dragleave(event)"
+    >
       Cart
     </div>
   </body>
