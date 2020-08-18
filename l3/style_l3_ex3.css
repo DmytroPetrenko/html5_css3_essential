@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #target{
     width: 500px;
     height: 300px;
