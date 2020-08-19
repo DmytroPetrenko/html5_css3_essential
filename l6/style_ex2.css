@@ -1,0 +1,22 @@
+div {
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#block-1 {
+  background-color: aqua;
+}
+
+#block-2 {
+  background-color: #dcd1fa;
+}
+
+#block-3 {
+  background-color: rgba(100, 200, 300, 0.25);
+}
+
+#block-4 {
+  background-color: hsla(62, 20%, 50%, 0.25);
+}
