@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l5_ex2_webWorker</title>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        var arr = new Uint16Array(1000000);
+        //this.crypto.getRandomValues(arr);
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] = Math.random() * 100;
+        }
+
+        //arr.forEach((element) => {
+        //  element = Math.random() * 100;
+        //});
+
+        var worker = new Worker("worker.js");
+
+        worker.addEventListener("message", function (e) {
+          document.getElementById("e").innerHTML += e.data + "<br />";
+        });
+
+        worker.postMessage([arr]);
+      };
+    </script>
+
+    <div id="e"></div>
+  </body>
+</html>
