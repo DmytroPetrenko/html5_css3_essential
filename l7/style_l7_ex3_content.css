@@ -1,0 +1,18 @@
+body {
+    counter-reset: section;
+    counter-reset: child;
+}
+
+body > p::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+div > p {
+    padding-left: 30px;
+}
+
+div > p::before {
+    counter-increment: child;
+    content: counter(child) ") ";
+}
