@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap");
+
+body {
+  text-align: center;
+}
+
+div {
+  background-color: black;
+  padding: 20px;
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+  color: blanchedalmond;
+  text-transform: uppercase;
+  text-shadow: blueviolet 0 0 30px, blueviolet 0 0 30px, blueviolet 0 0 30px,
+    blueviolet 0 0 30px, blueviolet 0 0 30px, blueviolet 0 0 30px,
+    blueviolet 0 0 30px,
+    whitesmoke 0 0 5px;
+    filter: blur(0.8px);
+  font-family: "MuseoModerno";
+  font-size: 36px;
+}
