@@ -1,0 +1,11 @@
+a {
+  padding: 10px;
+  transition: background-color, font-size 3s ease-in;
+  text-decoration: none;
+}
+
+a:hover {
+    background-color: #ff80c0;
+    font-size: 1.2em;
+}
+
