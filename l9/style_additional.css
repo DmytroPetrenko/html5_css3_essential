@@ -1,0 +1,55 @@
+img {
+  background-color: #f2f2f2;
+}
+
+body {
+  display: flex;
+}
+
+.card {
+  max-width: 180px;
+  max-height: 260px;
+  display: flex;
+  margin: 10px;
+}
+
+img {
+  height: 100%;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.somediv {
+  position: absolute;
+  max-width: inherit;
+  max-height: inherit;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.someblock {
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+}
+
+.textblock {
+  position: absolute;
+  color: ivory;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.textblock p {
+  padding: 10px;
+  margin: 0;
+}
+
+.somediv:hover {
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, 0.675, 0.055, 0.19);
+}
