@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: seashell;
+}
+
+.columns {
+    min-height: 200px;
+    background-color: #c5c5c5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.columns:hover {
+    background-color: #777777;
+}
+
+.columns p, h6 {
+    background-color: rgba(80, 80, 80, 0.6);
+    margin: 0;
+    max-width: 100%;
+    padding-left: 10px;
+}
